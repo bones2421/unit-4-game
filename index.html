@@ -8,6 +8,17 @@
 	<title>Crystal Collector</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- <link rel="game" type = "text/javascript" href="assets/javascript/game.js"> -->
+	<!-- Below is me trying to set up a modal instead of an alert -->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="style" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<!--CDN FOR ALERTS-->
+  <!-- <script src="sweetalert2.all.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script> -->
+  
 </head>
 <body>
 	<div class="header">
@@ -18,18 +29,18 @@
 		</br>
 		<ol>
 			<li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
-			<li>There are four crystals below.</li>
+			<li>There are four gemstones below.</li>
 			<ul>
 				<li id="blue">Blue</li>
 				<li id="green">Green</li>
 				<li id="red">Red</li>
 				<li id="yellow">Yellow</li>
 			</ul>
-			<li>By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+			<li>By clicking on a gem, you will add a specific amount of points to your total score.</li>
 			<li>You win the game by matching your total score to the random number.</li>
 			<li>You lose the game if your total score goes above the random number.</li>
-			<li>The value of each crystal is hidden from you until you click on it.</li>
-			<li>Each time when the game starts, the game will change the values of each crystal.</li>
+			<li>The value of each gem is hidden from you until you click on it.</li>
+			<li>Each time when the game starts, the game will change the values of each gem.</li>
 		</ol>
 	</div>
 	<div class="numberToMatch">
@@ -57,6 +68,68 @@
 		</h2>
 	</div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.all.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	
+	<!-- Tried to set up a modal -->
+	<div class="container">
+		<h2>Modal Options</h2>
+		<p>The <strong>show</strong> option specifies specifies whether the modal should be shown upon initialization.</p>
+		<!-- Trigger the modal with a button -->
+		<button type="button" class="btn btn-success btn-md" id="myBtn">Modal (show:true)</button>
+		<button type="button" class="btn btn-danger btn-md" id="myBtn2">Modal (show:false)</button>
+	  
+	
+		<div class="modal fade" id="myModal" role="dialog">
+		  <div class="modal-dialog">
+		  
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Modal Options</h4>
+			  </div>
+			  <div class="modal-body">
+				<p>Modal content..</p>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+			
+		  </div>
+		</div>
+	  
+		<!-- Modal -->
+		<div class="modal fade" id="myModal2" role="dialog">
+		  <div class="modal-dialog">
+		  
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4 class="modal-title">Modal Options</h4>
+			  </div>
+			  <div class="modal-body">
+				<p>Modal content..</p>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+			
+		  </div>
+		</div>
+	  </div>
+	   
+	  
+	  
+	  
+	  
+  
+  
+
+
 </body>
 </html>
