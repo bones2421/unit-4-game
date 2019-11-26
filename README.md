@@ -1,5 +1,5 @@
 Crystal Collector
-This is another game where the user is shown a set of crystals and they are given a random number. Each of the crystals has a number assigned to it at random. The user must click these crystals to get to the displayed number. They must identify the pattern and watch how the numbers respond.
+is another game where the user is shown a set of crystals and they are given a random number. Each of the crystals has a number assigned to it at random. The user must click these crystals to get to the displayed number. They must identify the pattern and watch how the numbers respond.
 
 Getting Started
 All you need is the deployed link and your browser.
